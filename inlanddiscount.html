@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet/less" href="./less/inlanddiscount.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <div class="backtop">
+        <img src="./images/backtop.png" alt="">
+    </div>
+    <header id="header">
+        <a href="index.html" class="back">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </a>
+        <h4>国内折扣</h4>
+        <a href="#" class="app">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <div class="banner">
+        <i class="fa fa-times-circle-o close" aria-hidden="true"></i>
+        <img src="./images/1212.png" alt="">
+    </div>
+
+    <main id="main">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div>
+                    <a href="#">
+                        <img src="./images/nv.png" alt="">
+                        <p class="title">西域美农新疆特产五星和田红枣250g*2</p>
+                        <p class="price">19.8元(5件99元)</p>
+                        <p class="bottom">
+                            <span class="from">京东商城</span>|<span class="time">10-22 13:28</span>
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/nv.png" alt="">
+                        <p class="title">西域美农新疆特产五星和田红枣250g*2</p>
+                        <p class="price">19.8元(5件99元)</p>
+                        <p class="bottom">
+                            <span class="from">京东商城</span>|<span class="time">10-22 13:28</span>
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/nv.png" alt="">
+                        <p class="title">西域美农新疆特产五星和田红枣250g*2</p>
+                        <p class="price">19.8元(5件99元)</p>
+                        <p class="bottom">
+                            <span class="from">京东商城</span>|<span class="time">10-22 13:28</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <nav id="nav">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">首页</a></li>
+            </ul>
+        </nav>
+        <div class="bottom">
+            <p class="info"><a href="http://m.manmanbuy.com/app.html?type=m&value=all" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+            <p class="websit">m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <script id="productTpl" type="text/html">
+        {{each result value index}}
+        <div data-id="{{value.productId}}" class="get-id">
+            <a href="#">
+                {{@value.productImg}}
+                <p class="title">{{value.productName}}</p>
+                <p class="price">{{value.productPrice}}</p>
+                <p class="bottom">
+                    <span class="from">{{value.productFrom}}</span>|<span class="time">{{value.productTime}}</span>
+                </p>
+            </a>
+        </div>
+        {{/each}}
+
+    </script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/zepto/fx.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/inlanddiscount.js"></script>
+</body>
+
+</html>

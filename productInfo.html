@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet/less" href="./less/productInfo.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="./inlanddiscount.html" class="back">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </a>
+        <h4>国内折扣</h4>
+        <a href="#" class="app">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <main id="main">
+        <div class="top">
+            <div class="title">
+                <h3> Apple iPhone 6 64GB 金色 移动联通电信4G手机</h3>
+                <p class="price">4088.00</p>
+                <div class="info">
+                    <span class="from">苏宁易购</span><span class="time">10-22 13:29</span><span class="tips">zjie
+                        / 慢慢买</span>
+                </div>
+            </div>
+            <section>
+                <div class="content">
+                    <p class="info">64G果6，需要的可以入手。 苏宁自营，现在参加大聚惠，4088到手，不玩游戏用用蛮好的。</p>
+                    <img src="./images/nv.png" alt="">
+                </div>
+                <div class="picwrap">
+                    <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
+                </div>
+            </section>
+
+        </div>
+        <button type="button" class="mui-btn mui-btn-warning shop-now">立即购买</button>
+        <div class="qr">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+        <div class="comment">
+            <p>发表评论</p>
+            <form>
+                <textarea cols="20" rows="5"></textarea>
+                <div class="submit">
+                    <button type="button" class="mui-btn mui-btn-warning">发表评论</button>
+                </div>
+            </form>
+        </div>
+        <div class="newcomment">
+            <p>最新评论</p>
+            <div class="content"></div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <nav id="nav">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">首页</a></li>
+            </ul>
+        </nav>
+        <div class="bottom">
+            <p class="info"><a href="http://m.manmanbuy.com/app.html?type=m&value=all" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+            <p class="websit">m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <script id="productInfoTpl" type="text/html">
+        {{each result value}}
+        <div class="title">
+            <h3>{{value.productName}}</h3>
+            <p class="price">{{value.productPrice}}</p>
+            <div class="info">
+                <span class="from">{{value.productFrom}}</span><span class="time">{{value.productTime}}</span><span class="tips">{{value.productTips}}</span>
+            </div>
+        </div>
+        <section>
+            <div class="content">
+                <p class="info">{{value.productInfo}}</p>
+                {{@value.productImg}}
+            </div>
+            <div class="picwrap">
+                <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
+            </div>
+        </section>   
+        {{/each}} 
+    </script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/productInfo.js"></script>
+</body>
+
+</html>
